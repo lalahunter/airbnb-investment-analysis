@@ -13,14 +13,14 @@ The main business problem is:
 
 | Team Member | Role |
 | --- | --- |
-| Lara Caçador | Program Manager, Database Design & Investment Analysis |
+| Lara Caçador | Project Manager, Database Design & Investment Analysis |
 | Kseniia Lukhlina | Data Analyst, Market Overview & City Analysis |
 | Angélica Roa | Data Analyst, Data Cleaning & Geolocation |
 
 
 ## Business Overview
 
-Our team acted as a data analytics consultancy approached by a private real-estate investor. He had capital ready to deploy in short-term rentals but no time or patience to sift through a flat, unstructured dataset himself. He asked us to turn raw Airbnb listing data into a clear, evidence-based recommendation: **where does a short-term rental actually make money, and why?**
+Our team acted as a data analytics consultancy approached by a private real-estate investor. He had capital ready to deploy in short-term rentals but no time or patience to sift through a flat, unstructured dataset himself. He asked us to turn raw Airbnb listing data into a clear, evidence-based recommendation: **where do the strongest short-term rental investment signals appear, and why?**
 
 To answer that, we needed to understand the business behind the data, which means to understand:
 - which property types already show proven demand
@@ -140,8 +140,7 @@ Miami Beach also clears the reliability bar, but its own zoning code — the Cit
 
 All rated a perfect 5.0, priced well below the dataset average (e.g. a room in Bali for $29/night, an apartment in Istanbul for $34/night). These are genuine candidates for a future international expansion once the US strategy proves out.
 
-4. ******Price does not reliably predict quality or demand.****** The correlation between price and rating is weak (r = 0.17); between price and review count it is close to zero (r = −0.04). This validates finding #3: the hidden gems aren't cheap because they're low quality, *they're cheap because the market hasn't caught up to them yet.*
-
+4. ******Price does not reliably predict quality or demand.****** The correlation between price and rating is weak (r = 0.17); between price and review count it is close to zero (r = −0.04). This supports finding #3: low price alone does not indicate low observed quality or popularity, making these listings worth further investigation rather than immediate dismissal.
 ------
 
 ## Business Recommendations
@@ -168,7 +167,7 @@ All rated a perfect 5.0, priced well below the dataset average (e.g. a room in B
 ## Repository Structure
 
 ```text
-first_project/
+airbnb-investment-analysis/
 │
 ├── Airbnb_Data/
 ├── data/
@@ -218,8 +217,8 @@ Reserved for reusable Python functions; not used in this project, as all work is
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/lalahunter/first_project.git
-cd first_project
+git clone https://github.com/lalahunter/airbnb-investment-analysis.git
+cd airbnb-investment-analysis
 ```
 
 ### 2. Install UV
